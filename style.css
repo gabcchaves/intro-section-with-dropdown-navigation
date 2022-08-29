@@ -41,7 +41,7 @@ header div {
 	align-items: center;
 }
 
-.menu {
+#menu {
 	flex: 1;
 }
 
@@ -206,7 +206,7 @@ header button:hover {
 
 /* Mobile settings */
 @media screen and (max-width: 1080px) {
-	.menu { display: none; }
+	#menu { display: none; }
 	
 	#sidemenu {
 		display: flex;
