@@ -9,9 +9,10 @@ html, body {
 }
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: 0.2s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: 0.2s;
+	box-sizing: border-box;
 }
 
 /* Color */
@@ -222,7 +223,7 @@ header button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		width: 50%;
+		width: 60%;
 		height: 100vh;
 		background-color: var(--almost-white);
 		padding-left: 5%;
@@ -256,10 +257,13 @@ header button:hover {
 
 	.log-options {
 		height: 70%;
+		width: 100%;
 	}
-
+	
 	.log-options a {
-		padding: 10% 0;
+		padding: 5% 5%;
+		width: 100%;
+		text-align: center;
 	}
 
 	header {
@@ -270,6 +274,23 @@ header button:hover {
 	.logo-container {
 		width: 20%;
 	}
+
+	.dropdown {
+		height: auto;
+	}
+
+	.dropbtn-content {
+		box-shadow: none;
+		width: 100%;
+		margin: 0;
+		position: static;
+		background-color: inherit;
+	}
+
+	.dropbtn-content a {
+		font-size: 1.2rem !important;
+	}
+	.dropbtn-content img { width: 10%; }
 
 	.main-area {
 		flex-direction: column-reverse;
