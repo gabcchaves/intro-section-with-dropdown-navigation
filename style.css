@@ -236,6 +236,14 @@ header button:hover {
 		box-shadow: -10px 0 100vw var(--almost-black);
 	}
 
+	#close-sidemenu {
+		padding-right: 8%;
+		align-self: flex-end;
+		width: 12%;
+	}
+
+	#close-sidemenu img { width: 100%; }
+
 	#menu * { font-size: 1.5rem; }
 
 	#menu > * {
