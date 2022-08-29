@@ -7,6 +7,8 @@ function loadEvents() {
 	let companyMenu = document.querySelector("#company-dropbtn");
 	let featuresMenuContent = document.querySelector("#features-dropbtn-content");
 	let companyMenuContent = document.querySelector("#company-dropbtn-content");
+	let mobileSideMenu = document.querySelector("#sidemenu");
+	let mobileSideMenuContent = document.querySelector("#menu");
 
 	featuresMenu.addEventListener("click", () => {
 		// Check menu state
@@ -23,6 +25,16 @@ function loadEvents() {
 			companyMenuContent.style.display = "none";
 		} else {
 			companyMenuContent.style.display = "flex";
+		}
+	});
+
+	mobileSideMenu.addEventListener("click", () => {
+		// Check menu state
+		if (mobileSideMenuContent.style.display != "none") {
+			mobileSideMenuContent.style.display = "none";
+		} else {
+			mobileSideMenuContent.style.display = "flex";
+			mobileSideMenu.childNodes[0].src = "images/icon-close-menu.svg";
 		}
 	});
 }
