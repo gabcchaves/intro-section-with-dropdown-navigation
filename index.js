@@ -9,6 +9,7 @@ function loadEvents() {
 	let companyMenuContent = document.querySelector("#company-dropbtn-content");
 	let mobileSideMenu = document.querySelector("#sidemenu");
 	let mobileSideMenuContent = document.querySelector("#menu");
+	let mobileCloseSideMenu = document.querySelector("#close-sidemenu");
 
 	featuresMenu.addEventListener("click", () => {
 		// Check menu state
@@ -34,8 +35,12 @@ function loadEvents() {
 			mobileSideMenuContent.style.display = "none";
 		} else {
 			mobileSideMenuContent.style.display = "flex";
-			mobileSideMenu.childNodes[0].src = "images/icon-close-menu.svg";
+			mobileCloseSideMenu.style.display = "block";
 		}
+	});
+
+	mobileCloseSideMenu.addEventListener("click", () => {
+		mobileSideMenuContent.style.display = "none";
 	});
 }
 

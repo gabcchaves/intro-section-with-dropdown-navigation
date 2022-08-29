@@ -207,6 +207,8 @@ header button:hover {
 
 #close-sidemenu { display: none; }
 
+#menu { display: flex; }
+
 /* Mobile settings */
 @media screen and (max-width: 1080px) {
 	* { font-size: 2vh; }
