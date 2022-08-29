@@ -41,6 +41,12 @@ header div {
 	align-items: center;
 }
 
+.menu {
+	flex: 1;
+}
+
+#sidemenu { display: none; }
+
 .logo-container {
 	width: 10%;
 	padding: 0 3%;
@@ -107,7 +113,7 @@ header a:hover {
 
 .log-options {
 	padding-right: 2%;
-	width: 12%;
+	width: 15%;
 	display: flex;
 	justify-content: space-between;
 }
