@@ -92,6 +92,7 @@ header div {
 	background-repeat: no-repeat;
 	background-position: right;
 	background-origin: border-box;
+	background-size: 10%;
 }
 
 header a {
