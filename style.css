@@ -203,3 +203,80 @@ header button:hover {
 	justify-content: space-between;
 	width: 75%;
 }
+
+/* Mobile settings */
+@media screen and (max-width: 1080px),
+screen and (orientation: landscape) and (max-width: 2160px) {
+	.menu { display: none; }
+	
+	#sidemenu {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0;
+		padding-right: 5%;
+	}
+
+	#sidemenu img {
+		width: 50%;
+	}
+	
+	header {
+		justify-content: space-between;
+		height: 10%;
+	}
+
+	.logo-container {
+		width: 20%;
+	}
+
+	.main-area {
+		flex-direction: column-reverse;
+		height: 100vh;
+		max-width: 100vw;
+	}
+
+	.intro {
+		width: 100%;
+		height: 60%;
+		text-align: center;
+	}
+
+	.intro > * {
+		text-align: center;
+		width: 100%;
+	}
+
+	.intro h1 {
+		width: 100%;
+		font-size: 2rem;
+	}
+
+	.intro p {
+		width: 100%;
+		font-size: 0.9rem;
+	}
+
+	.hero-container {
+		width: 100%;
+		height: 40%;
+	}
+
+	.hero-container source {
+		width: 100%;
+		height: 100%;
+	}
+
+	* { font-size: 2vh; }
+
+	.clients { width: 100%; }
+
+	.client { width: 20%; }
+
+	.client img { width: 100%; }
+
+	.intro button {
+		font-size: 1.5rem;
+		width: 50%;
+	}
+}
