@@ -215,12 +215,17 @@ header button:hover {
 		position: relative;
 	}
 
+	#sidemenu {
+		display: block;
+		padding-right: 5%;
+	}
+
 	#menu {
 		position: absolute;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: flex-start;
 		width: 60%;
